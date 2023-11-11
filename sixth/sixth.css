@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(28, 190, 211);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.apple{
+    background-color: rgb(28, 190, 211);
+    border-radius: 26px;
+    box-shadow: -10px -10px 10px rgb(255, 255, 255, 0.2),
+                15px 15px 15px rgb(0, 0, 0, 0.1),
+                inset -10px -10px 10px rgb(255, 255, 255, 0.2),
+                inset 15px 15px 15px rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+    animation-name: animate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+.apple:hover{
+    transform: rotate(360deg);
+    background-color: #fff;
+}
+.fa-apple{
+    color: #fff;
+    font-size: 76px;
+    padding: 60px;
+    transition: all 0.7s ease-in-out;
+}
+.apple:hover .fa-apple{
+    color: rgb(28, 190, 211);
+}
+
